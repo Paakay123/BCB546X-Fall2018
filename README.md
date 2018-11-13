@@ -1,63 +1,36 @@
-# BCB546X Fall 2018 Course Repository
+# Python Assignment
 
-This repository will be used throughout the semester to host the files and documents used in the course. It is expected that you will pull all new changes to this directory at the beginning of each class so that you can work with the data and script files for the in-class activities and homework assignments. Additionally, this repository will store the syllabus and other documents. 
+### Due: 16 November 2018
 
-For general information about the course, lecture slides, and to find descriptions of the weekly class activities please see the main course website:
+## Summary
 
-[https://eeob-biodata.github.io/EEOB-BCB-546X](https://eeob-biodata.github.io/EEOB-BCB-546X/)
+### Document written code and fill in the gaps
 
-## Cloning this Repository for the First Time
+Your colleague, Dr. X, has given you a partially written Python script to work with your shared data files. 
+You plan to translate cytochrome-b sequences to amino acids for each of 8 species of bears. 
+You will then compute some simple summaries of the amino-acid molecular weight and GC content of these sequences and add these values to a DataFrame, which already contains the average adult mass of each species. 
+Once you have these values entered in the DataFrame, you will create some plots for data visualization. 
+In this script you will find one function and additional lines of code that are working, but not adequately documented. Since Dr. X's experience with Python is different than your own, you may find that some of the suggested functions and approaches are unfamiliar to you. However, you have agreed to thoroughly document your script in order to better understand your work.
 
-Before cloning this repository, we recommend that you first have an account on [GitHub](https://github.com/). The following instructions assume that you have Git installed and are working in a Unix-based operating system.
+Additionally, Dr. X has written some comments and pseudocode that outline other components of the script that you agreed to complete. Since you're a conscientious scientist, you will also carefully document your own code.
 
-First, navigate to the directory that you would like to store the course repository:
+### To complete the assignment and analysis, create a single Jupyter notebook that documents the entire workflow. 
 
-```
-cd Desktop/BCB546X_2018
-```
+## Details
 
-Now, you can clone the repository:
+* Download the necessary files from the [`Python_Assignment`](https://github.com/EEOB-BioData/BCB546X-Fall2018/tree/master/assignments/Python_Assignment) folder in the course repository and add them to your own repository where you will submit this assignment. The files required are:
+    * `sequence_translate.py`
+    * `bears_mass.csv`
+    * `bears_cytb.fasta`
+* Be sure to install the BioPython library so that this script will work. (You may have already done this in an early [Python lesson](https://eeob-biodata.github.io/BCB546X-python/02-datatypes/).)
+* You will find explicit instructions and the code/comments from Dr. X in the file called `sequence_translate.py`.
+Specific tasks are enumerated (1-11) in the script file with comments at the top as well as in the necessary places in the code.
+* Create a new Jupyter notebook in your repository. 
+    * In this notebook you will carefully annotate and execute the code already provided in `sequence_translate.py`. If you're unfamiliar with a bit of code, you can find lots of resources and information online. Be sure to cite information appropriately (by providing URLs and other relevant references). 
+    * You must also write the missing code that is outlined by pseudocode and comments.
+    * Remember to document everything very clearly!
+* Commit and push your completed Python analyses in the Jupyter notebook to your repository
+    * Be sure that your GitHub repository is self contained--i.e., if someone cloned it they could run your whole Jupyter notebook without any trouble.
+* Submit the URL to your git repository to Python Assignment on Canvas by the end of the day on November 16, 2018.
 
-```
-git clone git@github.com:EEOB-BioData/BCB546X-Fall2018.git
-```
 
-Or you can use the HTTPS URL:
-
-```
-git clone https://github.com/EEOB-BioData/BCB546X-Fall2018.git
-```
-
-Now you have access to all of the files currently in the repository.
-
-## Pulling Changes
-
-This repository will be updated frequently throughout the semester. Thus, to have the most up-to-date files, you should pull the changes before you start any activity. To do this, simply use the `git pull` command to pull the changes from the master branch on the remote host.
-
-```
-git pull origin master
-```
-
-Now all your files should be up-to-date. If you happened to have modified a file that is already in the repository (not common), then you may be unable to pull the changes. To find out which file you modified, check the status of your repository:
-
-```
-git status
-```
-
-This will then list the files that you have changed along with any files you have created in the repository. Look for the file that is indicated as `modified`. If you want to save the changes in this file, simply rename the file and then use `git checkout` to get the version currently on the remote host. 
-
-For example, if you accidentally modified the file called `data.txt`, copy this file to a new location:
-
-```
-cp data.txt data_modified.txt
-```
-
-And then check out the unmodified file:
-
-```
-git checkout data.txt
-```
-
-## More Advanced Git Challenges
-
-You will learn how to work with git in more detail in the early part of the course. If you have any issues, please contact the course instructors via Slack!
